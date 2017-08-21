@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ticket Systems", "Ticket Systems\Ticket Systems.shproj", "{FE59DAE1-AC10-46AA-8C89-6CA82D131044}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Ticket Systems\Ticket Systems.projitems*{fe59dae1-ac10-46aa-8c89-6ca82d131044}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {473BECC0-D766-4656-B5DE-D227CFFDC1E9}
+	EndGlobalSection
+EndGlobal
