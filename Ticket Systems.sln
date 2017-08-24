@@ -1,13 +1,37 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.8
+VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Ticket Systems", "Ticket Systems\Ticket Systems.shproj", "{FE59DAE1-AC10-46AA-8C89-6CA82D131044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SibIP Ticket Server", "SibIP Ticket Server\SibIP Ticket Server.csproj", "{510153A3-87C4-40FA-B39F-050E951B3710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SystemsLogic", "SystemsLogic\SystemsLogic.csproj", "{69B75605-0A33-4EA2-BA22-B5C1B1A4BDEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Administrator", "Administrator\Administrator.csproj", "{533AC450-83B5-4E08-98DA-C9041F6CAD1E}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Ticket Systems\Ticket Systems.projitems*{fe59dae1-ac10-46aa-8c89-6ca82d131044}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{510153A3-87C4-40FA-B39F-050E951B3710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{510153A3-87C4-40FA-B39F-050E951B3710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{510153A3-87C4-40FA-B39F-050E951B3710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{510153A3-87C4-40FA-B39F-050E951B3710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69B75605-0A33-4EA2-BA22-B5C1B1A4BDEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B75605-0A33-4EA2-BA22-B5C1B1A4BDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B75605-0A33-4EA2-BA22-B5C1B1A4BDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B75605-0A33-4EA2-BA22-B5C1B1A4BDEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533AC450-83B5-4E08-98DA-C9041F6CAD1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533AC450-83B5-4E08-98DA-C9041F6CAD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533AC450-83B5-4E08-98DA-C9041F6CAD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533AC450-83B5-4E08-98DA-C9041F6CAD1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
