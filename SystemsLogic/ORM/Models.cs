@@ -21,7 +21,7 @@ using System.ComponentModel.DataAnnotations;
 необходимо добавить имена полей базы данных имеют имя 
  */
 
-namespace SystemsLogic
+namespace SystemsLogic.ORM
 {
     //класс описывающий поля таблицы пользователя системы
     public class User

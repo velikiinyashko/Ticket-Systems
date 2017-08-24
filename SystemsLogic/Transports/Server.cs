@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net;
 using System.Net.Sockets;
+using SystemsLogic.Logs;
 
-namespace SystemsLogic
+namespace SystemsLogic.Transports
 {
     class Server
     {

@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SystemsLogic
+namespace SystemsLogic.Transports
+
 {
     class Client
     {

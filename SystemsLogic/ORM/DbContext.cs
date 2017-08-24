@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 
-namespace SystemsLogic
+namespace SystemsLogic.ORM
 {
     public class Context : DbContext
     {
