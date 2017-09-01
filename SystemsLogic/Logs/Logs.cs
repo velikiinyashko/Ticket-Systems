@@ -24,6 +24,8 @@ namespace SystemsLogic.Logs
             }
         }
 
+
+
         public void WriteEventLogInfo()
         {
             GetEventLog.WriteEntry(LogText, EventLogEntryType.Information);

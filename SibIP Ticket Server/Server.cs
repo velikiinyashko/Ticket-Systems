@@ -7,6 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using SystemsLogic.Logs;
 
 namespace SibIP_Ticket_Server
 {

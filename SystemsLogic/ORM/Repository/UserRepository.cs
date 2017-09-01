@@ -9,21 +9,21 @@ using System.Data.Entity.ModelConfiguration;
 namespace SystemsLogic.ORM
 {
 
-    class Repository
+    public class UserRepository : IRepository<User>
     {
         private Context Db;
 
-        public Repository(string ConnectionString)
+        public UserRepository(string ConnectionString)
         {
             this.Db = new Context(ConnectionString);
         }
 
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<User> GetDataList()
         {
             return Db.Users;
         }
 
-        public User GetUser(int Id)
+        public User GetData(int Id)
         {
             return Db.Users.Find(Id);
         }
@@ -35,13 +35,26 @@ namespace SystemsLogic.ORM
 
         public void Update(User user)
         {
-            Db.Entry(user).State = System.Data.Entity.EntityState.Modified;
+            Db.Entry(user).State = EntityState.Modified;
         }
+
+        public void Delete(int Id)
+        {
+            User user = Db.Users.Find(Id);
+            if(user != null)
+            {
+                Db.Users.Remove(user);
+            }
+        } 
 
         public void Save()
         {
             Db.SaveChanges();
         }
-    }
 
+        public void Dispose()
+        {
+
+        }
+    }
 }

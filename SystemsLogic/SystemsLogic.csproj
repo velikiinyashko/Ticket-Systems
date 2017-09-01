@@ -53,15 +53,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ORM\DbContent.cs" />
+    <Compile Include="ORM\IGetDbContent.cs" />
+    <Compile Include="ORM\Repository\TiketRepository.cs" />
     <Compile Include="Transports\Client.cs" />
     <Compile Include="Logs\Logs.cs" />
     <Compile Include="ORM\Models.cs" />
-    <Compile Include="ORM\DbConnections.cs">
+    <Compile Include="ORM\GetDbConnections.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="ORM\DbContext.cs" />
-    <Compile Include="ORM\IRepository.cs" />
-    <Compile Include="ORM\Repository.cs" />
+    <Compile Include="ORM\Repository\IRepository.cs" />
+    <Compile Include="ORM\Repository\UserRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transports\Server.cs" />
   </ItemGroup>

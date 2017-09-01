@@ -37,7 +37,9 @@ namespace SystemsLogic.ORM
         //привязываем данного пользователя к конкретному клиенту
         public Client Client { get; set; }
         //привязываем к данному пользователю созданные им тикеты
-        public List<Ticket> Tickets { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
+
+        public ICollection<Note> Notes { get; set; }
     }
 
     //класс описывающий поля таблицы компании клиента использующего систему
@@ -59,7 +61,7 @@ namespace SystemsLogic.ORM
         public string Street { get; set; }
         
         //привязываем к конкретному клиенту список пользователей системы
-        public List<User> Users { get; set; }
+        public ICollection<User> Users { get; set; }
     }
 
     //класс описывающий поля таблицы тикита
@@ -74,6 +76,17 @@ namespace SystemsLogic.ORM
 
         public byte[] ScreenShot { get; set; }
         public byte[] Attachet { get; set; }
+
+        public User User { get; set; }
+    }
+
+    public class Note
+    {
+        [Key]
+        public int NoteId { get; set; }
+        public DateTime GetDateTimeNotes { get; set; }
+        public string Subject { get; set; }
+        public string TextNotes { get; set; }
 
         public User User { get; set; }
     }

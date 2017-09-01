@@ -10,7 +10,7 @@ namespace SystemsLogic.ORM
         where T : class
     {
         IEnumerable<T> GetDataList(); // Получение всех пользователей
-        T GetUser(int Id); // Получение пользователя по ID
+        T GetData(int Id); // Получение пользователя по ID
         void Create(T Item); // Создание пользователя
         void Update(T Item); // Обнавление 
         void Delete(int Id); // Удаление пользователя по ID
