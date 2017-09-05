@@ -29,7 +29,13 @@ namespace SystemsLogic.ORM
 
         public IEnumerable<TEntity> GetAllData()
         {
-            return _dbSet.ToList();
+            try
+            {
+                return _dbSet.ToList();
+            }catch(Exception ex)
+            {
+                return null;
+            }
         }
 
         public void Create(TEntity Items)

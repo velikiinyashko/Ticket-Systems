@@ -28,9 +28,9 @@ namespace SystemsLogic.ORM
     {
         [Key]
         public int UserId { get; set; }
-        [MinLength(4),MaxLength(20)]
+        [MinLength(4), MaxLength(20)]
         public string Login { get; set; }
-        [MinLength(5),MaxLength(36)]
+        [MinLength(5), MaxLength(36)]
         public string Password { get; set; }
         public string Role { get; set; }
 
@@ -47,19 +47,19 @@ namespace SystemsLogic.ORM
     {
         [Key]
         public int ClientId { get; set; }
-        [MinLength(2),MaxLength(36)]
+        [MinLength(2), MaxLength(36)]
         public string FirstName { get; set; }
-        [MinLength(2),MaxLength(36)]
+        [MinLength(2), MaxLength(36)]
         public string SecondName { get; set; }
-        [MinLength(2),MaxLength(36)]
+        [MinLength(2), MaxLength(36)]
         public string LastName { get; set; }
-        [MinLength(2),MaxLength(64)]
+        [MinLength(2), MaxLength(64)]
         public string Company { get; set; }
-        [MinLength(2),MaxLength(64)]
+        [MinLength(2), MaxLength(64)]
         public string City { get; set; }
         [MinLength(2), MaxLength(64)]
         public string Street { get; set; }
-        
+
         //привязываем к конкретному клиенту список пользователей системы
         public ICollection<User> Users { get; set; }
     }
@@ -89,5 +89,12 @@ namespace SystemsLogic.ORM
         public string TextNotes { get; set; }
 
         public User User { get; set; }
+    }
+
+    public class Inventory
+    {
+        [Key]
+        public int InventoryId { get; set; }
+        //public string
     }
 }
